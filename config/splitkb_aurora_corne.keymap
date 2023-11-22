@@ -91,7 +91,7 @@ keymap {
         &trans &kp F1  &kp F2  &kp F3  &kp F4  &kp LALT         &kp NUHS  &kp HASH  &kp DLLR &kp CARET  &kp AMPS  &trans
         &trans &kp F5  &kp F6  &kp F7  &kp F8  &trans           &kp GRAVE &kp PIPE &kp NUBS &trans &trans &trans
         &trans &kp F9  &kp F10 &kp F11 &kp F12 &trans           &trans   &trans  &trans  &trans  &trans &trans
-        &trans   &to _DEFAULT  &trans                           &trans  &to _MOUSE  &trans
+        &trans   &to _DEFAULT  &trans                           &trans  &to _DEFAULT  &trans
         >;
         };
 
