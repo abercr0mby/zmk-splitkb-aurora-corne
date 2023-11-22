@@ -25,50 +25,12 @@ keymap {
         _DEFAULT {
         bindings = <
         &none   &kp Q &kp W &kp E &kp R &kp T                                &kp Y &kp U  &kp I  &kp O   &kp P  &none
-        &none   &kp A &kp S &kp D &kp F &kp G         &kp H &kp J  &kp K &kp L &kp SINGLE_QUOT  &none
+        &none   &kp A &kp S &kp D &kp F &kp G                                &kp H &kp J  &kp K &kp L &kp SINGLE_QUOT  &none
         &none   &kp Z &kp X &kp C &kp V &kp B                                &kp N &kp M  &kp COMMA &kp DOT &kp FSLH  &none
-        &mt LCTRL TAB  &mo _SYMBOL  &mt LSHFT BKSP                           &kp SPACE &mo _NAV &kp RET
+        &mt LCTRL TAB  &mo _DEFAULT  &mt LSHFT BKSP                           &kp SPACE &mo _DEFAULT &kp RET
         >;
         };
 
-
-        _ADJUST {
-        bindings = <
-        &trans &kp F1  &kp F2  &kp F3  &kp F4  &kp LALT         &kp NUHS  &kp HASH  &kp DLLR &kp CARET  &kp AMPS  &trans
-        &trans &kp F5  &kp F6  &kp F7  &kp F8  &trans           &kp GRAVE &kp PIPE &kp NUBS &trans &trans &trans
-        &trans &kp F9  &kp F10 &kp F11 &kp F12 &trans           &trans   &trans  &trans  &trans  &trans &trans
-        &trans   &to _DEFAULT  &trans                           &trans  &to _MOUSE  &trans
-        >;
-        };
-
-
-        _SYMBOL {
-        bindings = <
-        &trans &kp PLUS   &kp 1  &kp 2  &kp 3  &kp MINUS         &kp LPAR  &kp RPAR  &kp EXCL &kp AT  &kp UNDER  &trans
-        &trans &kp FSLH   &kp 4  &kp 5  &kp 6  &KP_MULTIPLY      &kp LBRC  &kp RBRC &kp PRCNT &kp SEMI &kp COLON &trans
-        &trans &kp EQUAL  &kp 7  &kp 8  &kp 9  &kp 0             &kp LBKT  &kp RBKT  &trans  &trans  &kp NUBS &trans
-        &trans   &to _SYMBOL  &trans                             &trans  &to _NAV  &trans
-        >;
-        };        
-
-
-        _NAV {
-        bindings = <
-        &trans  &trans  &trans  &trans  &trans  &trans         &kp PAGE_UP  &kp LC(LEFT)  &kp UP &kp LC(RIGHT)  &kp LC(LA(DEL))  &trans
-        &trans  &trans  &trans  &trans  &trans  &trans         &kp HOME  &kp LEFT &kp DOWN &kp RIGHT &kp END &trans
-        &trans  &trans  &trans  &trans  &trans  &trans         &kp PAGE_DOWN  &kp K_APP  &trans  &trans  &trans  &trans
-        &trans   &to _SYMBOL  &trans                           &trans  &to _DEFAULT  &trans
-        >;
-        };
-
-        _REFERENCE {
-        bindings = <
-        &none   &kp Q &kp W &kp E &kp R &kp T                   &kp Y &kp U  &kp I  &kp O   &kp P     &none
-        &none   &kp A &kp S &kp D &kp F &kp G                   &kp H &kp J  &kp K &kp L &kp SINGLE_QUOT  &none
-        &none   &kp Z &kp X &kp C &kp V &kp B                   &kp N &kp M  &kp COMMA &kp DOT &kp FSLH  &none
-        &kp F1  &kp F2  &kp F3                                  &kp F12 &kp F11 &kp F10
-        >;
-        };
 
   };
 };
