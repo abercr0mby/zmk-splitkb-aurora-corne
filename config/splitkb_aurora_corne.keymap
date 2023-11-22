@@ -16,9 +16,7 @@
  #define _ADJUST 3
  #define _REFERENCE 4
 
-
-        
-
+   
 / {
 
 keymap {
