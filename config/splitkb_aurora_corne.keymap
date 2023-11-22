@@ -11,11 +11,9 @@
 
 
  #define _DEFAULT 0
- #define _SYMBOL 1 
- #define _NAV 2
- #define _ADJUST 3
- #define _REFERENCE 4
-
+ #define _ADJUST 1
+ #define _SYMBOL 2
+ #define _NAV 3
 
 / {
     behaviors {
@@ -102,15 +100,6 @@ keymap {
         &trans  &trans  &trans  &trans  &trans  &trans         &kp HOME  &kp LEFT &kp DOWN &kp RIGHT &kp END &trans
         &trans  &trans  &trans  &trans  &trans  &trans         &kp PAGE_DOWN  &kp K_APP  &trans  &trans  &trans  &trans
         &trans   &to _SYMBOL  &trans                           &trans  &to _DEFAULT  &trans
-        >;
-        };
-
-        _REFERENCE {
-        bindings = <
-        &none   &kp Q &kp W &kp E &kp R &kp T                   &kp Y &kp U  &kp I  &kp O   &kp P     &none
-        &none   &kp A &kp S &kp D &kp F &kp G                   &kp H &kp J  &kp K &kp L &kp SINGLE_QUOTE  &none
-        &none   &kp Z &kp X &kp C &kp V &kp B                   &kp N &kp M  &kp COMMA &kp DOT &kp FSLH  &none
-        &kp F1  &kp F2  &kp F3                                  &kp F12 &kp F11 &kp F10
         >;
         };
 
