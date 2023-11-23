@@ -26,6 +26,17 @@
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
         };
+
+        ti: tapus_interuptus {
+            compatible = "zmk,behavior-hold-tap";
+            label = "TAPUS_INTERUPTUS";
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            quick-tap-ms = <0>;
+            flavor = "tap-unless-interrupted";
+            bindings = <&kp>, <&kp>;
+        };
+
     };
 };
 
@@ -69,7 +80,7 @@ keymap {
         &none   &kp Q &kp W &kp E &kp R &kp T                                &kp Y &kp U  &kp I  &kp O   &kp P  &none
         &none   &kp A &hm LSHIFT S &hm LCTRL D &hm LALT F &hm LGUI G         &kp H &kp J  &kp K &kp L &kp SINGLE_QUOTE  &none
         &none   &kp Z &kp X &kp C &kp V &kp B                                &kp N &kp M  &kp COMMA &kp DOT &kp FSLH  &none
-        &mt LCTRL TAB  &mo _SYMBOL  &mt LSHFT BKSP                           &kp SPACE &mo _NAV &kp RET
+        &mt LCTRL TAB  &mo _SYMBOL  &ti LSHFT BKSP                           &kp SPACE &mo _NAV &kp RET
         >;
         };
 
@@ -86,20 +97,20 @@ keymap {
 
         _SYMBOL {
         bindings = <
-        &trans &kp PLUS   &kp N1  &kp N2  &kp N3  &kp MINUS         &kp LPAR  &kp RPAR  &kp EXCL &kp AT  &kp UNDER  &trans
-        &trans &kp FSLH   &kp N4  &kp N5  &kp N6  &kp KP_MULTIPLY      &kp LBRC  &kp RBRC &kp PRCNT &kp SEMI &kp COLON &trans
+        &trans &kp PLUS   &kp N1  &kp N2  &kp N3  &kp MINUS          &kp LPAR  &kp RPAR  &kp EXCL &kp AT  &kp UNDER  &trans
+        &trans &kp FSLH   &kp N4  &kp N5  &kp N6  &kp KP_MULTIPLY    &kp LBRC  &kp RBRC &kp PRCNT &kp SEMI &kp COLON &trans
         &trans &kp EQUAL  &kp N7  &kp N8  &kp N9  &kp N0             &kp LBKT  &kp RBKT  &trans  &trans  &kp NUBS &trans
-        &trans   &to _SYMBOL  &trans                             &trans  &to _NAV  &trans
+        &trans   &to _SYMBOL  &trans                                 &trans  &to _NAV  &trans
         >;
         };        
 
 
         _NAV {
         bindings = <
-        &trans &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2 &trans         &kp PAGE_UP  &kp LC(LEFT)  &kp UP &kp LC(RIGHT)  &kp LC(LA(DEL))  &trans
-        &trans  &bt BT_SEL 3  &bt BT_SEL 4  &trans  &trans  &trans         &kp HOME  &kp LEFT &kp DOWN &kp RIGHT &kp END &trans
-        &trans  &trans  &trans  &trans  &trans  &trans         &kp PAGE_DOWN  &kp K_APP  &trans  &trans  &trans  &trans
-        &trans   &to _SYMBOL  &trans                           &trans  &to _DEFAULT  &trans
+        &trans &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2 &trans     &kp PAGE_UP  &kp LC(LEFT)  &kp UP &kp LC(RIGHT)  &kp LC(LA(DEL))  &trans
+        &trans  &bt BT_SEL 3  &bt BT_SEL 4  &trans  &trans  &trans             &kp HOME  &kp LEFT &kp DOWN &kp RIGHT &kp END &trans
+        &trans  &trans  &trans  &trans  &trans  &trans                         &kp PAGE_DOWN  &kp K_APP  &trans  &trans  &trans  &trans
+        &trans   &to _SYMBOL  &trans                                           &trans  &to _DEFAULT  &trans
         >;
         };
 
