@@ -112,8 +112,8 @@ keymap {
 
         _ADJUST {
         bindings = <
-        &trans &kp F1  &kp F2  &kp F3  &kp F4  &kp LALT         &kp NUHS  &kp HASH  &kp GRAVE &kp CARET  &kp PIPE  &trans
-        &trans &kp F5  &kp F6  &kp F7  &kp F8  &trans           &kp LS(NUBS) &trans &trans  &trans &trans &trans
+        &trans &kp F1  &kp F2  &kp F3  &kp F4  &kp LALT         &kp GRAVE &kp CARET  &kp PIPE  &trans &trans  &trans
+        &trans &kp F5  &kp F6  &kp F7  &kp F8  &trans           &trans &trans &trans  &trans &trans &trans
         &trans &kp F9  &kp F10 &kp F11 &kp F12 &trans           &trans   &trans  &trans  &trans  &trans &trans
         &trans   &to _DEFAULT  &trans                           &trans  &to _DEFAULT  &trans
         >;
@@ -124,7 +124,7 @@ keymap {
         bindings = <
         &trans &kp PLUS   &kp N1  &kp N2  &kp N3  &kp MINUS          &td_par  &kp DLLR  &kp EXCL &kp AT  &kp UNDER  &trans
         &trans &kp FSLH   &kp N4  &kp N5  &kp N6  &kp KP_MULTIPLY    &td_brc  &kp AMPS &kp PRCNT &kp SEMI &kp COLON &trans
-        &trans &kp EQUAL  &kp N7  &kp N8  &kp N9  &kp N0             &td_brk  &trans  &trans  &trans  &kp NUBS &trans
+        &trans &kp EQUAL  &kp N7  &kp N8  &kp N9  &kp N0             &td_brk  &kp LS(NUBS)  &kp NUHS  &kp HASH  &kp NUBS &trans
         &trans   &to _SYMBOL  &trans                                 &trans  &to _NAV  &trans
         >;
         };        
