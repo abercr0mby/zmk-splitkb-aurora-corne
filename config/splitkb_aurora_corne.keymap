@@ -169,9 +169,9 @@ keymap {
 
         _ADJUST {
         bindings = <
-        &trans &trans  &kp F7  &kp F8  &kp F9  &kp F10                  &trans &trans  &trans  &trans &trans  &trans
+        &trans &trans  &kp F7  &kp F8  &kp F9  &kp F10                  &bt BT_SEL 0 &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3 &bt BT_SEL 4  &trans
         &trans &kp LALT  &kp F4  &kp F5  &kp F6  &kp F11                &trans &trans &trans  &trans &trans &trans
-        &trans &trans  &kp F1 &kp F2 &kp F3 &kp F12                     &trans   &trans  &trans  &trans  &trans &trans
+        &trans &trans  &kp F1 &kp F2 &kp F3 &kp F12                     &trans   &trans  &trans  &trans  &bt BT_CLR &trans
         &trans   &trans  &trans                                         &trans  &trans  &trans
         >;
         };
@@ -197,12 +197,11 @@ keymap {
 
         _NAV {
         bindings = <
-        &trans &trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2 &trans     &kp PAGE_UP  &kp LC(LEFT)  &kp UP &kp LC(RIGHT)  &kp LC(LA(DEL))  &trans
-        &trans  &bt BT_SEL 3  &bt BT_SEL 4  &trans  &trans  &trans             &kp HOME  &kp LEFT &kp DOWN &kp RIGHT &kp END &trans
-        &trans  &trans  &trans  &trans  &trans  &trans                         &kp PAGE_DOWN  &kp K_APP  &trans  &trans  &bt BT_CLR  &trans
-        &trans   &to _SYMBOL  &trans                                           &trans  &to _DEFAULT  &trans
+        &trans &kp LC(A)  &kp GRAVE  &trans  &trans &trans                     &kp PAGE_UP  &kp LC(LEFT)  &kp UP &kp LC(RIGHT)  &kp LC(LA(DEL))  &trans
+        &trans  &kp LGUI  &kp LSHIFT  &kp LCTRL  &kp LALT  &trans              &kp HOME  &kp LEFT &kp DOWN &kp RIGHT &kp END &trans
+        &kp LC(Z)  &kp LC(X)  &kp LC(C)  &kp LC(V)  &kp LC(Y)                  &kp PAGE_DOWN  &kp K_APP  &trans  &trans  &trans  &trans
+        &trans  &trans  &trans                                                 &trans  &trans  &trans
         >;
         };
-
   };
 };
