@@ -188,13 +188,12 @@ keymap {
 
         _SYMBOL {
         bindings = <
-        &trans &kp PLUS   &kp N1  &kp N2  &kp N3  &kp MINUS          &td_par  &kp DLLR  &kp EXCL &kp AT  &kp UNDER  &trans
-        &trans &kp FSLH   &kp N4  &kp N5  &kp N6  &kp KP_MULTIPLY    &td_brc  &kp AMPS &kp PRCNT &kp SEMI &kp COLON &trans
-        &trans &kp EQUAL  &kp N7  &kp N8  &kp N9  &kp N0             &td_brk  &kp LS(NUBS)  &kp NUHS  &kp HASH  &kp NUBS &trans
-        &trans   &to _SYMBOL  &trans                                 &trans  &to _NAV  &trans
+        &trans &kp PLUS   &kp GRAVE  &kp PIPE  &kp LS(NUBS)  &kp MINUS          &td_par  &td_ab  &td_exlm &td_at  &TD_UNDS  &trans
+        &trans &hm LGUI FSLH  &kp LSHIFT  &kp LCTRL  &kp LALT  &kp KP_MULTIPLY  &td_brc  &td_curr &kp PRCNT &td_coln &td_quot &trans
+        &trans &kp LC(Z)  &kp LC(X)  &kp LC(C)  &kp LC(V)  &kp EQUAL            &td_brk  &kp AMPS  &kp COMMA  &kp DOT  &td_slash &trans
+        &trans   &trans  &trans                                                 &trans  &trans  &trans
         >;
         };        
-
 
         _NAV {
         bindings = <
