@@ -180,7 +180,7 @@ keymap {
         _NUM {
         bindings = <
         &trans &kp PLUS   &kp N7  &kp N8  &kp N9  &kp MINUS          &td_par  &td_ab  &trans &trans  &trans  &trans
-        &trans &kp FSLH   &kp N4  &kp N5  &kp N6  &kp KP_MULTIPLY    &td_brc  &kp RALT  &kp RCTRL &kp RSHIFT &kp RGUI &trans
+        &trans &kp FSLH   &kp N4  &kp N5  &kp N6  &kp KP_MULTIPLY    &td_brc  &kp RALT  &kp RCTRL &hm RSHIFT COLON &kp RGUI &trans
         &trans &kp N0  &kp N1  &kp N2  &kp N3  &kp EQUAL             &td_brk  &trans &kp COMMA &kp DOT &td_slash &trans
         &trans   &trans  &trans                                      &trans  &trans  &trans
         >;
