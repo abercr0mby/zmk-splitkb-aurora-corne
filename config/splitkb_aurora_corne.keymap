@@ -179,17 +179,17 @@ keymap {
 
         _NUM {
         bindings = <
-        &trans &kp PLUS   &kp N7  &kp N8  &kp N9  &kp MINUS          &td_par  &td_ab  &trans &trans  &trans  &trans
+        &trans &kp PLUS   &kp N7  &kp N8  &kp N9  &kp MINUS          &td_par  &td_ab  &td_exlm &td_coln  &td_unds  &trans
         &trans &kp FSLH   &kp N4  &kp N5  &kp N6  &kp KP_MULTIPLY    &td_brc  &kp RALT  &kp RCTRL &kp RSHIFT &kp RGUI &trans
-        &trans &kp N0  &kp N1  &kp N2  &kp N3  &kp EQUAL             &td_brk  &trans &kp COMMA &kp DOT &td_slash &trans
+        &trans &kp N0  &kp N1  &kp N2  &kp N3  &kp EQUAL             &td_brk  &kp AMPS  &kp COMMA  &kp DOT  &td_slash &trans
         &trans   &trans  &trans                                      &trans  &trans  &trans
         >;
         }; 
 
         _SYMBOL {
         bindings = <
-        &trans &kp PLUS   &kp GRAVE  &kp PIPE  &kp LS(NUBS)  &kp MINUS          &td_par  &td_ab  &td_exlm &td_at  &td_unds  &trans
-        &trans &hm LGUI FSLH  &kp LSHIFT  &kp LCTRL  &kp LALT  &kp KP_MULTIPLY  &td_brc  &td_curr &kp PRCNT &td_coln &td_quot &trans
+        &trans &kp PLUS   &kp GRAVE  &kp PIPE  &kp LS(NUBS)  &kp MINUS          &td_par  &td_ab  &td_exlm &td_coln  &td_unds  &trans
+        &trans &hm LGUI FSLH  &kp LSHIFT  &kp LCTRL  &kp LALT  &kp KP_MULTIPLY  &td_brc  &td_curr &kp PRCNT &td_at &td_quot &trans
         &trans &kp LC(Z)  &kp LC(X)  &kp LC(C)  &kp LC(V)  &kp EQUAL            &td_brk  &kp AMPS  &kp COMMA  &kp DOT  &td_slash &trans
         &trans   &trans  &trans                                                 &trans  &trans  &trans
         >;
