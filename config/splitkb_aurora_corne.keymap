@@ -23,7 +23,7 @@
             compatible = "zmk,behavior-hold-tap";
             label = "HOMEROW_MODS";
             #binding-cells = <2>;
-            tapping-term-ms = <300>;
+            tapping-term-ms = <350>;
             quick-tap-ms = <0>;
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
@@ -125,7 +125,24 @@
             #binding-cells = <0>;
             tapping-term-ms = <200>;
             bindings = <&kp DQT>, <&kp NUHS>;
-        };            
+        };      
+
+        td_date: tap_dance_11 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAP_DANCE_11";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&kp FLSH>, <&kp COLN>;
+        };        
+
+        td_amp: tap_dance_12 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAP_DANCE_12";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&kp AMPS>, <&kp LS(NUBS)>;
+        }; 
+
     };
 };
 
@@ -163,7 +180,7 @@ keymap {
         &none  &kp Q &kp W &kp E &kp R &kp T                                &kp Y &kp U  &kp I  &kp O   &kp P  &none
         &none  &hm LGUI A &hm LSHIFT S &hm LCTRL D &hm LALT F &kp G         &kp H &hm RALT J  &hm RCTRL K &hm RSHIFT L &hm RGUI SINGLE_QUOTE  &none
         &none  &kp Z &kp X &kp C &kp V &kp B                                &kp N &kp M  &kp COMMA &kp DOT &td_slash  &none
-        &lt _SYMBOL TAB  &lt _NAV DEL  &ti LSHFT BKSP                        &lt _SYMBOL SPACE &lt _NUM ESC &kp RET
+        &lt _SYMBOL TAB  &lt _NAV DEL  &ti LSHFT BKSP                       &lt _SYMBOL SPACE &lt _NUM ESC &kp RET
         >;
         };
 
@@ -180,8 +197,8 @@ keymap {
 
         _NUM {
         bindings = <
-        &trans &kp PLUS   &kp N7  &kp N8  &kp N9  &kp MINUS          &td_par  &td_ab  &td_exlm &td_coln  &td_unds  &trans
-        &trans &kp FSLH   &kp N4  &kp N5  &kp N6  &kp KP_MULTIPLY    &td_brc  &kp RALT  &kp RCTRL &kp RSHIFT &kp RGUI &trans
+        &trans &kp PLUS &kp N7  &kp N8  &kp N9  &kp MINUS          &td_par  &td_ab  &td_exlm &td_coln  &td_unds  &trans
+        &trans &td_date  &kp N4  &kp N5  &kp N6  &kp KP_MULTIPLY    &td_brc  &kp RALT  &kp RCTRL &kp RSHIFT &kp RGUI &trans
         &trans &kp N0  &kp N1  &kp N2  &kp N3  &kp EQUAL             &td_brk  &kp AMPS  &kp COMMA  &kp DOT  &td_slash &trans
         &trans   &trans  &trans                                      &trans  &trans  &trans
         >;
@@ -189,9 +206,9 @@ keymap {
 
         _SYMBOL {
         bindings = <
-        &trans &kp PLUS   &kp GRAVE  &kp PIPE  &kp LS(NUBS)  &kp MINUS          &td_par  &td_ab  &td_exlm &td_coln  &td_unds  &trans
-        &trans &hm LGUI FSLH  &kp LSHIFT  &kp LCTRL  &kp LALT  &kp KP_MULTIPLY  &td_brc  &td_curr &kp PRCNT &td_at &td_quot &trans
-        &trans &kp LC(Z)  &kp LC(X)  &kp LC(C)  &kp LC(V)  &kp EQUAL            &td_brk  &kp AMPS  &kp COMMA  &kp DOT  &td_slash &trans
+        &trans &kp PLUS   &kp GRAVE  &kp PIPE  &kp LS(NUBS)  &kp MINUS          &td_par  &td_ab  &td_exlm &td_quot &td_unds  &trans
+        &trans &hm LGUI FSLH  &kp LSHIFT  &kp LCTRL  &kp LALT  &kp KP_MULTIPLY  &td_brc  &td_curr &kp PRCNT &td_coln &td_at &trans
+        &trans &kp LC(Z)  &kp LC(X)  &kp LC(C)  &kp LC(V)  &kp EQUAL            &td_brk  &td_amp  &kp COMMA  &kp DOT  &td_slash &trans
         &trans   &trans  &trans                                                 &trans  &trans  &trans
         >;
         };        
