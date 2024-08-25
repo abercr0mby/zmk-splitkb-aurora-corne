@@ -206,8 +206,8 @@ keymap {
 
         _SYMBOL {
         bindings = <
-        &trans &kp PLUS   &kp GRAVE  &kp PIPE  &kp LS(NUBS)  &kp MINUS          &td_par  &td_ab  &td_exlm &td_quot &td_unds  &trans
-        &trans &hm LGUI FSLH  &kp LSHIFT  &kp LCTRL  &kp LALT  &kp KP_MULTIPLY  &td_brc  &td_curr &kp PRCNT &td_coln &td_at &trans
+        &trans &kp PLUS   &kp GRAVE  &kp PIPE  &kp LS(NUBS)  &kp MINUS          &td_par  &td_ab  &td_exlm &td_at &td_unds  &trans
+        &trans &hm LGUI FSLH  &kp LSHIFT  &kp LCTRL  &kp LALT  &kp KP_MULTIPLY  &td_brc  &td_curr &kp PRCNT &td_coln &td_quot &trans
         &trans &kp LC(Z)  &kp LC(X)  &kp LC(C)  &kp LC(V)  &kp EQUAL            &td_brk  &td_amp  &kp COMMA  &kp DOT  &td_slash &trans
         &trans   &trans  &trans                                                 &trans  &trans  &trans
         >;
