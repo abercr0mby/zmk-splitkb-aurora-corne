@@ -140,7 +140,7 @@
             label = "TAP_DANCE_12";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&kp AMPS>, <&kp LS(NUBS)>;
+            bindings = <&kp AMPS>, <&kp NUBS>;
         }; 
 
     };
