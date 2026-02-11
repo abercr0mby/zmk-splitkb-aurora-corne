@@ -200,7 +200,7 @@ combos {
         combo_cv_ent {
             timeout-ms = <50>;
             key-positions = <27 28>;
-            bindings = <&kp ENT>;
+            bindings = <&kp RET>;
         };
 
     };
