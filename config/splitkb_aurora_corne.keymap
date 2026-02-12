@@ -155,7 +155,7 @@
             label = "TAP_DANCE_14";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&kp PLUS>, <&kp >;
+            bindings = <&kp PLUS>, <&kp DOT>;
         };
 
         td_minus: tap_dance_15 {
@@ -164,14 +164,6 @@
             #binding-cells = <0>;
             tapping-term-ms = <200>;
             bindings = <&kp MINUS>, <&kp DOLLAR>;
-        };
-
-        td_zero: tap_dance_16 {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TAP_DANCE_16";
-            #binding-cells = <0>;
-            tapping-term-ms = <200>;
-            bindings = <&kp N0>, <&kp DOT>;
         };
 
         td_vtoc: tap_dance_17 {
@@ -254,8 +246,8 @@ keymap {
         _SYMBOL {
         bindings = <
         &trans &td_unds &td_at  &td_exlm  &td_ab  &td_par                       &td_par  &td_ab  &td_exlm &td_at &td_unds  &trans
-        &trans &hm LGUI FSLH  &kp LSHIFT  &kp LCTRL  &kp LALT  &td_brc          &td_brc  &td_curr &kp PRCNT &td_coln &td_quot &trans
-        &trans &td_slash  &kp DOT  &kp COMMA  &td_amp  &td_brk                  &td_brk  &td_amp  &kp COMMA  &kp DOT  &td_slash &trans
+        &trans &hm LGUI FSLH  &kp LSHIFT  &kp LCTRL  &kp LALT  &td_brc          &td_brc  &td_amp &kp PRCNT &td_coln &td_quot &trans
+        &trans &td_slash  &kp DOT  &kp COMMA  &td_amp  &td_brk                  &td_brk  &td_curr  &kp COMMA  &kp DOT  &td_slash &trans
         &trans   &trans  &trans                                                 &trans  &trans  &trans
         >;
         };        
@@ -265,7 +257,7 @@ keymap {
         bindings = <
         &trans &td_plus &kp N7  &kp N8  &kp N9  &td_minus                                  &kp PAGE_UP  &kp LC(LEFT)  &kp UP &kp LC(RIGHT)  &kp LC(LA(DEL))  &trans
         &trans &hm LGUI KP_MULTIPLY &hm LSHIFT N4 &hm LCTRL N5  &hm LALT N6  &td_date      &kp HOME  &kp LEFT &kp DOWN &kp RIGHT &kp END &trans
-        &trans &td_zero  &kp N1  &kp N2  &kp N3  &td_equal                                 &kp PAGE_DOWN  &kp K_APP  &trans  &trans  &trans  &trans
+        &trans &kp N0  &kp N1  &kp N2  &kp N3  &td_equal                                 &kp PAGE_DOWN  &kp K_APP  &trans  &trans  &trans  &trans
         &trans  &trans  &trans                                                             &trans  &trans  &trans
         >;
         };
