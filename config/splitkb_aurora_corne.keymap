@@ -224,7 +224,7 @@ keymap {
         bindings = <
         &none  &kp Q &kp W &kp E &kp R &kp T                                &kp Y &kp U  &kp I  &kp O   &kp P  &none
         &none  &hm LGUI A &hm LSHIFT S &hm LCTRL D &hm LALT F &kp G         &kp H &hm LALT J  &hm LCTRL K &hm LSHIFT L &hm LGUI SINGLE_QUOTE  &none
-        &none  &kp Z &kp X &kp C &td_vtoc &kp B                                &kp N &kp M  &kp COMMA &kp DOT &td_slash  &none
+        &none  &kp Z &kp X &kp C &kp V &kp B                                &kp N &kp M  &kp COMMA &kp DOT &td_slash  &none
         &lt _SYMBOL TAB  &lt _NAV DEL  &ti LSHFT BKSP                       &lt _SYMBOL SPACE &lt _NUM ESC &kp RET
         >;
         };
