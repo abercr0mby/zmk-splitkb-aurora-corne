@@ -25,6 +25,7 @@
             quick-tap-ms = <0>;
             flavor = "balanced";
             require-prior-idle-ms = <150>;
+            hold-while-undecided; 
             bindings = <&kp>, <&kp>;
         };
 
@@ -178,7 +179,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TAP_DANCE_17";
             #binding-cells = <0>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <400>;
             bindings = <&kp V>, <&kp C>;
         }; 
 
