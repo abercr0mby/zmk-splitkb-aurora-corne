@@ -22,7 +22,7 @@
             label = "HOMEROW_MODS";
             #binding-cells = <2>;
             tapping-term-ms = <280>;
-            quick-tap-ms = <150>;
+            quick-tap-ms = <200>;
             flavor = "balanced";
             require-prior-idle-ms = <150>;
             bindings = <&kp>, <&kp>;
@@ -155,7 +155,7 @@
             label = "TAP_DANCE_14";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&kp PLUS>, <&kp HASH>;
+            bindings = <&kp PLUS>, <&kp >;
         };
 
         td_minus: tap_dance_15 {
