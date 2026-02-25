@@ -19,56 +19,56 @@
     behaviors {
         hml: homerow_mods_left {
             compatible = "zmk,behavior-hold-tap";
-            label = "HOMEROW_MODS";
+            label = "HOMEROW_MODS_LEFT";
             #binding-cells = <2>;
             tapping-term-ms = <280>;
             quick-tap-ms = <200>;
             flavor = "balanced";
             require-prior-idle-ms = <1>;
             bindings = <&kp>, <&kp>;
-    hold-trigger-key-positions = <
-        6 7 8 9 10
-        18 19 20 21 22
-        30 31 32 33 34
-        36 37 38
-    >;
+            hold-trigger-key-positions = <
+                6 7 8 9 10
+                18 19 20 21 22
+                30 31 32 33 34
+                36 37 38
+            >;
             hold-trigger-on-release;
         };
 
         hmc: homerow_mods_ctrl {
             compatible = "zmk,behavior-hold-tap";
-            label = "HOMEROW_MODS";
+            label = "HOMEROW_MODS_CTRL";
             #binding-cells = <2>;
             tapping-term-ms = <280>;
             quick-tap-ms = <200>;
             flavor = "balanced";
             require-prior-idle-ms = <1>;
             bindings = <&kp>, <&kp>;
-    hold-trigger-key-positions = <
-        6 7 8 9 10
-        13 14
-        18 19 20 21 22 
-        25 26 27 28 29
-        30 31 32 33 34
-        36 37 38
-    >;
+            hold-trigger-key-positions = <
+                6 7 8 9 10
+                13 14
+                18 19 20 21 22 
+                25 26 27 28 29
+                30 31 32 33 34
+                36 37 38
+            >;
             hold-trigger-on-release;
         };
 
         hmr: homerow_mods_right {
             compatible = "zmk,behavior-hold-tap";
-            label = "HOMEROW_MODS";
+            label = "HOMEROW_MODS_RIGHT";
             #binding-cells = <2>;
             tapping-term-ms = <280>;
             quick-tap-ms = <200>;
             flavor = "balanced";
             require-prior-idle-ms = <1>;
             bindings = <&kp>, <&kp>;
-    hold-trigger-key-positions = <
-        0 1 2 3 4 5
-        12 13 14 15 16 17
-        24 25 26 27 28 29        
-    >;
+            hold-trigger-key-positions = <
+                0 1 2 3 4 5
+                12 13 14 15 16 17
+                24 25 26 27 28 29        
+            >;
             hold-trigger-on-release;
         };
 
