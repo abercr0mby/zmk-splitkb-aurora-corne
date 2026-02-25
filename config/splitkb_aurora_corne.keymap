@@ -300,7 +300,7 @@ keymap {
         _NAV {
         bindings = <
         &trans &td_plus &kp N7  &kp N8  &kp N9  &td_minus                                       &kp PAGE_UP  &kp LC(LEFT)  &kp UP &kp LC(RIGHT)  &kp LC(LA(DEL))  &trans
-        &trans &hml LGUI KP_MULTIPLY &hml LSHIFT N4 &hmlc LCTRL N5  &hml LALT N6  &td_date      &kp HOME  &kp LEFT &kp DOWN &kp RIGHT &kp END &trans
+        &trans &hml LGUI KP_MULTIPLY &hml LSHIFT N4 &hmc LCTRL N5  &hml LALT N6  &td_date      &kp HOME  &kp LEFT &kp DOWN &kp RIGHT &kp END &trans
         &trans &kp N0  &kp N1  &kp N2  &kp N3  &td_equal                                        &kp PAGE_DOWN  &kp K_APP  &trans  &trans  &trans  &trans
         &trans  &trans  &trans                                                                  &trans  &trans  &trans
         >;
