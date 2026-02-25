@@ -17,7 +17,7 @@
 
 / { 
     behaviors {
-        hm: homerow_mods {
+        hml: homerow_mods_left {
             compatible = "zmk,behavior-hold-tap";
             label = "HOMEROW_MODS";
             #binding-cells = <2>;
@@ -26,6 +26,47 @@
             flavor = "balanced";
             require-prior-idle-ms = <1>;
             bindings = <&kp>, <&kp>;
+    hold-trigger-key-positions = <
+        6 7 8 9 10 11
+        18 19 20 21 22 23
+        30 31 32 33 34 35        
+    >;
+            hold-trigger-on-release;
+        };
+
+        hmlc: homerow_mods_left_ctrl {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOMEROW_MODS";
+            #binding-cells = <2>;
+            tapping-term-ms = <280>;
+            quick-tap-ms = <200>;
+            flavor = "balanced";
+            require-prior-idle-ms = <1>;
+            bindings = <&kp>, <&kp>;
+    hold-trigger-key-positions = <
+        6 7 8 9 10 11
+        18 19 20 21 22 23
+        30 31 32 33 34 35
+        13 14 25 26 27 28 29
+    >;
+            hold-trigger-on-release;
+        };
+
+        hmr: homerow_mods_right {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOMEROW_MODS";
+            #binding-cells = <2>;
+            tapping-term-ms = <280>;
+            quick-tap-ms = <200>;
+            flavor = "balanced";
+            require-prior-idle-ms = <1>;
+            bindings = <&kp>, <&kp>;
+    hold-trigger-key-positions = <
+        0 1 2 3 4 5
+        12 13 14 15 16 17
+        24 25 26 27 28 29        
+    >;
+            hold-trigger-on-release;
         };
 
         ti: tapus_interuptus {
@@ -216,7 +257,7 @@ keymap {
         _DEFAULT {
         bindings = <
         &none  &kp Q &kp W &kp E &kp R &kp T                                &kp Y &kp U  &kp I  &kp O   &kp P  &none
-        &none  &hm LGUI A &hm LSHIFT S &hm LCTRL D &hm LALT F &kp G         &kp H &hm LALT J  &hm LCTRL K &hm LSHIFT L &hm LGUI SINGLE_QUOTE  &none
+        &none  &hml LGUI A &hml LSHIFT S &hmlc LCTRL D &hml LALT F &kp G         &kp H &hmr LALT J  &hmr LCTRL K &hmr LSHIFT L &hmr LGUI SINGLE_QUOTE  &none
         &none  &kp Z &kp X &kp C &td_vtoc &kp B                                &kp N &kp M  &kp COMMA &kp DOT &td_slash  &none
         &lt _SYMBOL TAB  &lt _NAV DEL  &ti LSHFT BKSP                       &lt _SYMBOL SPACE &lt _NUM ESC &kp RET
         >;
@@ -246,7 +287,7 @@ keymap {
         _SYMBOL {
         bindings = <
         &trans &td_unds &td_at  &td_exlm  &td_ab  &td_par                       &td_par  &td_ab  &td_exlm &td_at &td_unds  &trans
-        &trans &hm LGUI FSLH  &kp LSHIFT  &kp LCTRL  &kp LALT  &td_brc          &td_brc  &td_amp &kp PRCNT &td_coln &td_quot &trans
+        &trans &hml LGUI FSLH  &kp LSHIFT  &kp LCTRL  &kp LALT  &td_brc          &td_brc  &td_amp &kp PRCNT &td_coln &td_quot &trans
         &trans &td_slash  &kp DOT  &kp COMMA  &td_amp  &td_brk                  &td_brk  &td_curr  &kp COMMA  &kp DOT  &td_slash &trans
         &trans   &trans  &trans                                                 &trans  &trans  &trans
         >;
@@ -255,10 +296,10 @@ keymap {
 
         _NAV {
         bindings = <
-        &trans &td_plus &kp N7  &kp N8  &kp N9  &td_minus                                  &kp PAGE_UP  &kp LC(LEFT)  &kp UP &kp LC(RIGHT)  &kp LC(LA(DEL))  &trans
-        &trans &hm LGUI KP_MULTIPLY &hm LSHIFT N4 &hm LCTRL N5  &hm LALT N6  &td_date      &kp HOME  &kp LEFT &kp DOWN &kp RIGHT &kp END &trans
-        &trans &kp N0  &kp N1  &kp N2  &kp N3  &td_equal                                 &kp PAGE_DOWN  &kp K_APP  &trans  &trans  &trans  &trans
-        &trans  &trans  &trans                                                             &trans  &trans  &trans
+        &trans &td_plus &kp N7  &kp N8  &kp N9  &td_minus                                       &kp PAGE_UP  &kp LC(LEFT)  &kp UP &kp LC(RIGHT)  &kp LC(LA(DEL))  &trans
+        &trans &hml LGUI KP_MULTIPLY &hml LSHIFT N4 &hmlc LCTRL N5  &hml LALT N6  &td_date      &kp HOME  &kp LEFT &kp DOWN &kp RIGHT &kp END &trans
+        &trans &kp N0  &kp N1  &kp N2  &kp N3  &td_equal                                        &kp PAGE_DOWN  &kp K_APP  &trans  &trans  &trans  &trans
+        &trans  &trans  &trans                                                                  &trans  &trans  &trans
         >;
         };
   };
