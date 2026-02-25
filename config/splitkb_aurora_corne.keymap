@@ -27,9 +27,9 @@
             require-prior-idle-ms = <1>;
             bindings = <&kp>, <&kp>;
     hold-trigger-key-positions = <
-        6 7 8 9 10 11
-        18 19 20 21 22 23
-        30 31 32 33 34 35 
+        6 7 8 9 10
+        18 19 20 21 22
+        30 31 32 33 34
         36 37 38
     >;
             hold-trigger-on-release;
@@ -45,10 +45,11 @@
             require-prior-idle-ms = <1>;
             bindings = <&kp>, <&kp>;
     hold-trigger-key-positions = <
-        6 7 8 9 10 11
+        6 7 8 9 10
         13 14
-        18 19 20 21 22 23 25 26 27 28 29
-        30 31 32 33 34 35
+        18 19 20 21 22 
+        25 26 27 28 29
+        30 31 32 33 34
         36 37 38
     >;
             hold-trigger-on-release;
