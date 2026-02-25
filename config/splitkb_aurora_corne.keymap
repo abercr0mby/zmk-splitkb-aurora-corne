@@ -15,6 +15,8 @@
  #define _SYMBOL 3
  #define _NAV 4
 
+/*turns out the label being unique here matters. It does not cause an error but dupes will almost be assigned at random
+or at least there will be some confusion causing some interesting bugs to occur*/
 / { 
     behaviors {
         hml: homerow_mods_left {
@@ -29,6 +31,7 @@
             hold-trigger-key-positions = <
                 6 7 8 9 10
                 18 19 20 21 22
+                27
                 30 31 32 33 34
                 36 37 38
             >;
@@ -218,6 +221,13 @@
             bindings = <&kp V>, <&kp C>;
         }; 
 
+        td_prcnt: tap_dance_18 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAP_DANCE_18";
+            #binding-cells = <0>;
+            tapping-term-ms = <400>;
+            bindings = <&kp PRCNT>, <&kp KP_MULTIPLY>;
+        };
     };
 };
 
@@ -290,7 +300,7 @@ keymap {
         _SYMBOL {
         bindings = <
         &trans &td_unds &td_at  &td_exlm  &td_ab  &td_par                       &td_par  &td_ab  &td_exlm &td_at &td_unds  &trans
-        &trans &hml LGUI FSLH  &kp LSHIFT  &kp LCTRL  &kp LALT  &td_brc          &td_brc  &td_amp &kp PRCNT &td_coln &td_quot &trans
+        &trans &hml LGUI FSLH  &kp LSHIFT  &kp LCTRL  &kp LALT  &td_brc          &td_brc  &td_amp &td_prcnt &td_coln &td_quot &trans
         &trans &td_slash  &kp DOT  &kp COMMA  &td_amp  &td_brk                  &td_brk  &td_curr  &kp COMMA  &kp DOT  &td_slash &trans
         &trans   &trans  &trans                                                 &trans  &trans  &trans
         >;
