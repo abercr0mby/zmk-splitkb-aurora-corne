@@ -14,7 +14,7 @@
 #The above has changed now: https://github.com/abercr0mby/zmk-splitkb-aurora-corne/actions/runs/28701670738/job/85120638960
 ---
 include:
-  - board: nice_nano@2.0.0//zmk
+  - board: nice_nano
     shield: splitkb_aurora_corne_left
-  - board: nice_nano@2.0.0//zmk
+  - board: nice_nano
     shield: splitkb_aurora_corne_right
