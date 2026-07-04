@@ -302,7 +302,7 @@ keymap {
         bindings = <
         &trans &td_unds &td_at  &td_exlm  &td_ab  &td_par                        &td_par  &td_ab  &td_exlm &td_at &td_unds  &trans
         &trans &hml LGUI FSLH  &kp LSHIFT  &kp LCTRL  &kp LALT  &td_brc          &td_brc  &td_amp &td_prcnt &td_coln &td_quot &trans
-        &trans &td_slash  &kp DOT &kp C &kp V  &td_brk                         &td_brk  &td_curr  &kp COMMA  &kp DOT  &td_slash &trans
+        &trans &td_slash  &kp DOT &kp LC(C) &kp LC(V)  &td_brk                         &td_brk  &td_curr  &kp COMMA  &kp DOT  &td_slash &trans
         &trans   &trans  &trans                                                  &trans  &trans  &trans
         >;
         };        
