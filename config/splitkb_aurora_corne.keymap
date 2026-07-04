@@ -166,6 +166,7 @@
             bindings = <&kp MINUS>, <&kp DOLLAR>;
         };
 
+        /*leaving this in but not using it just now*/
         td_vtoc: tap_dance_17 {
             compatible = "zmk,behavior-tap-dance";
             label = "TAP_DANCE_17";
@@ -217,7 +218,7 @@ keymap {
         bindings = <
         &none  &kp Q &kp W &kp E &kp R &kp T                                &kp Y &kp U  &kp I  &kp O   &kp P  &none
         &none  &hm LGUI A &hm LSHIFT S &hm LCTRL D &hm LALT F &kp G         &kp H &hm LALT J  &hm LCTRL K &hm LSHIFT L &hm LGUI SINGLE_QUOTE  &none
-        &none  &kp Z &kp X &kp C &td_vtoc &kp B                                &kp N &kp M  &kp COMMA &kp DOT &td_slash  &none
+        &none  &kp Z &kp X &kp C &kp V &kp B                                &kp N &kp M  &kp COMMA &kp DOT &td_slash  &none
         &lt _SYMBOL TAB  &lt _NAV DEL  &ti LSHFT BKSP                       &lt _SYMBOL SPACE &lt _NUM ESC &kp RET
         >;
         };
@@ -247,7 +248,7 @@ keymap {
         bindings = <
         &trans &td_unds &td_at  &td_exlm  &td_ab  &td_par                       &td_par  &td_ab  &td_exlm &td_at &td_unds  &trans
         &trans &hm LGUI FSLH  &kp LSHIFT  &kp LCTRL  &kp LALT  &td_brc          &td_brc  &td_amp &kp PRCNT &td_coln &td_quot &trans
-        &trans &td_slash  &kp DOT  &kp COMMA  &td_amp  &td_brk                  &td_brk  &td_curr  &kp COMMA  &kp DOT  &td_slash &trans
+        &trans &td_slash  &kp DOT  LC(C)  LC(V)  &td_brk                  &td_brk  &td_curr  &kp COMMA  &kp DOT  &td_slash &trans
         &trans   &trans  &trans                                                 &trans  &trans  &trans
         >;
         };        
