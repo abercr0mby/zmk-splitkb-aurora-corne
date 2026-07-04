@@ -273,7 +273,7 @@ keymap {
         &none  &kp Q &kp W &kp E &kp R &kp T                                &kp Y &kp U  &kp I  &kp O   &kp P  &none
         &none  &hml LGUI A &hml LSHIFT S &hmc LCTRL D &hml LALT F &kp G         &kp H &hmr LALT J  &hmr LCTRL K &hmr LSHIFT L &hmr LGUI SINGLE_QUOTE  &none
         &none  &kp Z &kp X &kp C &kp V &kp B                                &kp N &kp M  &kp COMMA &kp DOT &td_slash  &none
-        &lt _SYMBOL TAB  &lt _NAV DEL  &ti LSHFT BKSP                       &lt _SYMBOL SPACE &lt _NUM ESC &kp RET
+        &lt _SYMBOL TAB &lt _NAV DEL &ti LSHFT BKSP                       &lt _SYMBOL SPACE &lt _NUM ESC &kp RET
         >;
         };
 
@@ -300,10 +300,10 @@ keymap {
 
         _SYMBOL {
         bindings = <
-        &trans &td_unds &td_at  &td_exlm  &td_ab  &td_par                       &td_par  &td_ab  &td_exlm &td_at &td_unds  &trans
+        &trans &td_unds &td_at  &td_exlm  &td_ab  &td_par                        &td_par  &td_ab  &td_exlm &td_at &td_unds  &trans
         &trans &hml LGUI FSLH  &kp LSHIFT  &kp LCTRL  &kp LALT  &td_brc          &td_brc  &td_amp &td_prcnt &td_coln &td_quot &trans
-        &trans &td_slash  &kp DOT  LC(C)  LC(V)  &td_brk                  &td_brk  &td_curr  &kp COMMA  &kp DOT  &td_slash &trans
-        &trans   &trans  &trans                                                 &trans  &trans  &trans
+        &trans &td_slash  &kp DOT &kp C &kp V  &td_brk                         &td_brk  &td_curr  &kp COMMA  &kp DOT  &td_slash &trans
+        &trans   &trans  &trans                                                  &trans  &trans  &trans
         >;
         };        
 
